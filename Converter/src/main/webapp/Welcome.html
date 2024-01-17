@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Currency Exchange Converter</title>
+    </head>
+    <body>
+        <h1>Currency Exchange Converter</h1>
+        <form action="Welcome.jsp" method="post" >        
+            <input  type="number" name="amount1" min="0" value="1">       
+            <select name="currency1"</select>>
+                <option selected="" value="Euro">Euro - EUR</option>
+                <option value="USD">United States Dollars - USD</option>        
+                <option value="INR">India Rupees - INR</option>
+                
+            </select>
+
+            =
+            <select name="currency2" >
+                <option selected="" value="Euro">Euro - EUR</option>
+                <option value="USD">United States Dollars - USD</option>
+                <option value="INR">India Rupees - INR</option>
+                
+            </select>
+            <div id="swap">
+                <input type="submit" value="swap" />
+            </div>
+        </form>
+    </body>
+</html>
