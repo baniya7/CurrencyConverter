@@ -32,6 +32,6 @@
     <center>
     <a href="http://localhost:8081/Converter/Logout.jsp"> <input type="submit" value="Logout" ><br>
     <br>
-     <a href="http://localhost:8081/Converter/Welcome.html"><input type="submit" value="Convert" ></center></a>
+     <a href="http://localhost:8081/Converter/ChangeRate.html"><input type="submit" value="Change Exchange Rate" ></center></a>
      </BODY>
 </HTML>

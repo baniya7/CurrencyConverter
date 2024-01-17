@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+	
+
+<body>
+	<div class="center">
+		
+<h1>Currency Exchange Rate</h1>
+					
+        		<form action="ChangeRate.jsp" method="post" >        
+            
+            <select name="currency1"</select>
+             
+                <option selected="" value="Euro">1 Euro - EUR</option>
+                <option value="United States Dollar (USD)">1 United States Dollars - USD</option>        
+                <option value="Indian Rupee (INR)">1 India Rupees - INR</option>
+                
+            </select>
+
+            =
+            <input  type="number" step="0.01" name="amount1" min="0" value="1"> 
+            <select name="currency2" >
+                <option selected="" value="Euro">Euro - EUR</option>
+                <option value="United States Dollar (USD)">United States Dollars - USD</option>
+                <option value="Indian Rupee (INR)">India Rupees - INR</option>
+                
+            </select>
+            <div id="swap" >
+                <input type="submit" value="Change Rate" class="button" />
+            </div>
+            </div>
+            </body>
+            
+            <style>
+body {
+	
+    font-family: Roboto;
+    font-size: 14px;
+    background-size: 200% 100% !important;
+    animation: move 10s ease infinite;
+    transform: translate3d(0, 0, 0);
+    background: linear-gradient(45deg, lightblue 10%, #A2C7E5 90%);
+    height: 100vh
+}
+.center {
+	padding: 140px 0;
+	position:relative;
+	text-align: center;
+}
+
+			</style>
+        </form>
+       
+</body>
+</html>
