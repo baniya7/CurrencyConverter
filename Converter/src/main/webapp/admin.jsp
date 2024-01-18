@@ -32,7 +32,7 @@ if(flag==1)
 }
 else
 {
-	response.sendRedirect("Admin.html");
+	response.sendRedirect("AdminFail.jsp");
 }
 }
 catch (Exception e)
