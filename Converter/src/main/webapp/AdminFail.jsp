@@ -12,20 +12,12 @@ background-size: 100% 100%;
 }
 </style>
 <meta charset="UTF-8">
-<title>Login Fail</title>
+<title>Insert title here</title>
 </head>
 <body>
-<img id="loading" alt="" />
-<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function()
-{
-    $("#loading").hide();
-});
-</script>
-<script>
-alert("Wrong Credentials Please try again");
-window.location.href="http://localhost:8081/Converter/Login.html";
+<script >
+alert("Invalid Credentials please try again");
+window.location.href="http://localhost:8081/Converter/Admin.html";
 </script>
 </body>
 </html>

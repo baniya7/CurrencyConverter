@@ -20,6 +20,10 @@ Statement statement=con.createStatement();
 ResultSet set=statement.executeQuery("Select * from users where User_Name='"+uname+"'");
 if(!set.next())
 {
+	if(upwd.equals(""))
+	{
+		response.sendRedirect("PwdFail.jsp");
+	}
 String query="insert into users(User_Name,User_Password) values('"+uname+"','"+upwd+"')";
 statement.executeUpdate(query);
 response.sendRedirect("RegisterSuccess.jsp");
