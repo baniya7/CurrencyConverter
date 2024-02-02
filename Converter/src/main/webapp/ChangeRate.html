@@ -1,53 +1,56 @@
-
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Currency Exchange Converter</title>
-    </head>
-    <body>
-		<div class="center">
-        <header class="header">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+	
+
+<body>
+	<div class="center">
+		<header class="header">
     <a href="#" class="logo">Currency Converter</a>
     <nav class="nav-items">
-      <a href="http://localhost:8081/Converter/Admin.html">Admin Login</a>
+      <a href="http://localhost:8081/Converter/Login.html">User Login</a>
       <a href="http://localhost:8081/Converter/Logout.jsp">Logout </a>
     </nav>    
   </header>
-  <center>
-       
-        <form action="Welcome.jsp" method="post" >
-			 <h1>Currency Exchange Converter</h1>        
-            <input  type="number" name="amount1" min="0" value="1">       
-            <select name="currency1"</select>>
-                <option selected="" value="Euro">Euro - EUR</option>
-                <option value="United States Dollar (USD)">United States Dollars - USD</option>        
-                <option value="Indian Rupee (INR)">India Rupees - INR</option>
+<center>		
+
+					
+        		<form action="ChangeRate.jsp" method="post" class="Main">        
+            <h1>Currency Exchange Rate</h1>
+            <select name="currency1"</select>
+             
+                <option selected="" value="Euro">1 Euro - EUR</option>
+                <option value="United States Dollar (USD)">1 United States Dollars - USD</option>        
+                <option value="Indian Rupee (INR)">1 India Rupees - INR</option>
                 
             </select>
 
             =
+            <input  type="number" step="0.01" name="amount1" min="0" value="1"> 
             <select name="currency2" >
                 <option selected="" value="Euro">Euro - EUR</option>
                 <option value="United States Dollar (USD)">United States Dollars - USD</option>
                 <option value="Indian Rupee (INR)">India Rupees - INR</option>
                 
             </select>
-           <div id="swap" ><br>
-                <input type="submit" value="Swap" class="button" /><br>
+            <div id="swap" ><br>
+                <input type="submit" value="Change Rate" class="button" /><br>
             </div>
             </div>
-        </form>
-        </center>
-         <footer class="footer">
+            </center>
+            <footer class="footer">
     <div class="copy">&copy; 2024 CurrencyConverter</div>
     <div class="bottom-links">
       <div class="links">
         <span>More Info</span>
         <a href="#">Home</a>
         <a href="http://localhost:8081/Converter/Logout.jsp">Logout</a>
-        <a href="http://localhost:8081/Converter/Admin.html">Admin login</a>
+        <a href="http://localhost:8081/Converter/Login.html">User login</a>
       </div>
       <div class="links">
         <span>Social Links</span>
@@ -57,8 +60,10 @@
       </div>
     </div>
     </footer>
-        <style>
-			body {
+            </body>
+            
+            <style>
+body {
 	
     font-family: Roboto;
     font-size: 14px;
@@ -158,6 +163,11 @@ form{
       color: black;
       padding: 5px 20px;
     }
-		</style>
-    </body>
+     
+
+
+			</style>
+        </form>
+       
+</body>
 </html>

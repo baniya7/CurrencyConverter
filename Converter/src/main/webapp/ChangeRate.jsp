@@ -4,36 +4,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>hi admin!!</title>
+<title>Change Rate</title>
 </head>
 <body>
-<%@ page import="java.sql.DriverManager" %> // or
+<%@ page import="java.sql.DriverManager" %> 
 <%@ page import="java.sql.*" %>
 <%
-String aname=request.getParameter("aname");
-String apwd=request.getParameter("apwd");
+String amount1=request.getParameter("amount1");
+String currency1=request.getParameter("currency1");
+String currency2=request.getParameter("currency2");
 try
 {
 Class.forName("com.mysql.cj.jdbc.Driver");
 Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/currency_converter","root","root");
 Statement statement=con.createStatement();
-ResultSet set=statement.executeQuery("Select * from admin");
-int flag=0;
-while(set.next())
-{
-	if(aname.equals(set.getString(2)) && apwd.equals(set.getString(3)))
-	{
-		flag=1;
-	}
-}
-if(flag==1)
-{
-	response.sendRedirect("AdminRate.jsp");
-}
-else
-{
-	response.sendRedirect("AdminFail.jsp");
-}
+String query="update rates set Exchange_Rate='"+amount1+"' where (Base_Currency='"+currency1+"' and To_Currency='"+currency2+"')";
+statement.executeUpdate(query);
+response.sendRedirect("RateUpdateSuccess.jsp");
 }
 catch (Exception e)
 {

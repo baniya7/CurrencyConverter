@@ -95,11 +95,11 @@
        <TITLE>The View Of Database Table </TITLE>
        </HEAD>
        <center>
-       <BODY BGCOLOR=Lightblue>
+       <BODY BGCOLOR=lightblue>
         <header class="header">
     <a href="#" class="logo">Currency Converter</a>
     <nav class="nav-items">
-      <a href="http://localhost:8081/Converter/Admin.html">Admin Login</a>
+      <a href="http://localhost:8081/Converter/Login.html">User Login</a>
       <a href="http://localhost:8081/Converter/Logout.jsp">Logout </a>
     </nav>    
   </header>
@@ -129,7 +129,7 @@
      </center>
     <center>
     <br>
-    <a href="http://localhost:8081/Converter/Welcome.html" class="button">Convert</a>
+    <a href="http://localhost:8081/Converter/ChangeRate.html" class="button">Change Exchange Rate</a>
     </center></a>
      <footer class="footer">
     <div class="copy">&copy; 2024 CurrencyConverter</div>
@@ -137,8 +137,8 @@
       <div class="links">
         <span>More Info</span>
         <a href="#">Home</a>
-        <a href="http://localhost:8081/Converter/Admin.html">Admin login</a>
         <a href="http://localhost:8081/Converter/Logout.jsp">Logout</a>
+        <a href="http://localhost:8081/Converter/Login.html">User login</a>
       </div>
       <div class="links">
         <span>Social Links</span>
@@ -150,3 +150,11 @@
     </footer>
      </BODY>
 </HTML>
+
+
+
+
+
+
+
+
